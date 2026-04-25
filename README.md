@@ -2,7 +2,7 @@
 
 ![Nama](https://img.shields.io/badge/Nama-Muhammad%20Said%20Abimanyu-0A66C2?style=for-the-badge&logo=github&logoColor=white)
 ![Kelas](https://img.shields.io/badge/Kelas-I%2024%201A-1ABC9C?style=for-the-badge)
-![Matkul](https://img.shields.io/badge/Matakuliah-Pemrograman%20Mobile-FF6F00?style=for-the-badge&logo=android&logoColor=white)
+![Matkul](https://img.shields.io/badge/Matakuliah-Pemrograman%20Mobile2-FF6F00?style=for-the-badge&logo=android&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Mahasiswa-blueviolet?style=for-the-badge)
 
 </p>
