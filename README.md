@@ -106,21 +106,23 @@
 
 Buat file:
 
-\`\`\`
+```
 secrets.properties
-\`\`\`
+```
 
 Isi dengan:
 
-\`\`\`properties
+```
+properties
 GROQ_API_KEY=gsk_kunci_anda
-\`\`\`
+```
 
 ---
 
 ### 3. Tambahkan ke build.gradle.kts
 
-\`\`\`kotlin
+```
+kotlin
 android {
     buildFeatures {
         buildConfig = true
@@ -141,25 +143,27 @@ android.defaultConfig {
         "\"\${secretsProperties.getProperty("GROQ_API_KEY")}\""
     )
 }
-\`\`\`
+```
 
 ---
 
 ### 4. Permission
 
-\`\`\`xml
+```
+xml
 <uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission 
     android:name="android.permission.WRITE_EXTERNAL_STORAGE"
     android:maxSdkVersion="28"/>
-\`\`\`
+```
 
 ---
 
 ### 5. File Provider
 
-\`\`\`xml
+```
+xml
 <provider
     android:name="androidx.core.content.FileProvider"
     android:authorities="\${applicationId}.fileprovider"
@@ -169,13 +173,14 @@ android.defaultConfig {
         android:name="android.support.FILE_PROVIDER_PATHS"
         android:resource="@xml/file_paths" />
 </provider>
-\`\`\`
+```
 
-\`\`\`xml
+```
+xml
 <paths>
     <cache-path name="cache" path="/" />
 </paths>
-\`\`\`
+```
 
 ---
 
