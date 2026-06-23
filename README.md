@@ -1,251 +1,419 @@
 <p align="center">
 
 ![Nama](https://img.shields.io/badge/Nama-Muhammad%20Said%20Abimanyu-0A66C2?style=for-the-badge&logo=github&logoColor=white)
-![Kelas](https://img.shields.io/badge/Kelas-I%2024%201A-1ABC9C?style=for-the-badge)
-![Matkul](https://img.shields.io/badge/Matakuliah-Pemrograman%20Mobile2-FF6F00?style=for-the-badge&logo=android&logoColor=white)
-![Status](https://img.shields.io/badge/NIM-312410145-blueviolet?style=for-the-badge)
+![NIM](https://img.shields.io/badge/NIM-312410145-blueviolet?style=for-the-badge)
+![Kelas](https://img.shields.io/badge/Kelas-TI%2024%20A1-1ABC9C?style=for-the-badge)
+![Matakuliah](https://img.shields.io/badge/Matakuliah-Pemrograman%20Mobile%202-FF6F00?style=for-the-badge&logo=android&logoColor=white)
 
 </p>
 
-# 💰 CatatUang - Aplikasi Pencatat Keuangan Pribadi
-
-> **Catat Uang, Atur Masa Depan.**
-
-**CatatUang** adalah aplikasi Android modern untuk mengelola keuangan pribadi. Aplikasi ini memungkinkan pengguna mencatat pemasukan dan pengeluaran, memindai struk belanja dengan OCR dan AI, membuat target tabungan, serta berkonsultasi dengan asisten keuangan berbasis AI (Groq Llama). Dibangun dengan **Jetpack Compose** dan **Kotlin Coroutines**.
-
----
-
-## 🚀 Tech Stack
-
-![Platform](https://img.shields.io/badge/Platform-Android-brightgreen)
-![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-purple)
-![Compose](https://img.shields.io/badge/Jetpack%20Compose-2024-blue)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
-- Kotlin (100%)
-- Jetpack Compose (Material 3)
-- MVVM Architecture
-- Coroutines & Flow
-- Google ML Kit (OCR)
-- Groq API (Llama 3.3)
-- Retrofit + Gson
-- SharedPreferences
-- CameraX
-- PdfDocument
-
----
-
-## ✨ Fitur Utama
-
-### 📊 Manajemen Keuangan
-- Tambah pemasukan & pengeluaran
-- Kategori, deskripsi, dan tanggal otomatis
-- Riwayat transaksi tersimpan rapi
-
-### 🎯 Target Tabungan
-- Buat tujuan finansial
-- Pantau progres secara real-time
-
-### 🧾 Pemindai Struk (OCR + AI)
-- Scan struk dari kamera / galeri
-- Ekstrak teks otomatis
-- AI membaca item + harga
-
-### 🤖 Asisten Keuangan AI
-- Analisis pemasukan & pengeluaran
-- Saran keuangan personal
-- Chat dengan AI yang mengetahui data keuangan dan target tabungan Anda
-
-### 📄 Ekspor PDF
-- Generate laporan profesional
-- Bisa dibagikan
-
-### 📈 Statistik & Laporan
-- Grafik pemasukan vs pengeluaran
-- Status surplus / defisit
-
-### 🎨 UI Modern
-- Material 3
-- Animasi halus
-- Dark / Light mode
-
-### 🧩 Draggable Chat Bubble
-- Tombol asisten AI yang bisa dipindahkan
-- Tombol mudah di kontrol
-  
----
-
-## 📸 Preview Aplikasi
+<h1 align="center">💰 CatatUang</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9a5d1ed2-7347-4e5c-a65e-3a142effb6a4" width="200"/>
-  <img src="https://github.com/user-attachments/assets/9b1a066b-c40a-4b6e-a620-f67b1586114f" width="200"/>
-  <img src="https://github.com/user-attachments/assets/029c16d7-d03e-4c84-b81e-650faf73e703" width="200"/>
+<b>Catat Uang, Atur Masa Depan.</b>
 </p>
 
 <p align="center">
-  🏠 <b>Dashboard</b> &nbsp;&nbsp;&nbsp;&nbsp;
-  🧾 <b>Scan Struk</b> &nbsp;&nbsp;&nbsp;&nbsp;
-  🤖 <b>AI Chat</b>
+Aplikasi Android modern untuk membantu pengguna mengelola keuangan pribadi, mencatat transaksi, memindai struk menggunakan OCR berbasis AI, membuat target tabungan, hingga memperoleh saran keuangan melalui Artificial Intelligence.
 </p>
 
 ---
 
-## ⚙️ Instalasi & Setup
+# 📖 Tentang Proyek
 
-### 1. Persyaratan
+CatatUang merupakan aplikasi Android yang dikembangkan sebagai proyek **Ujian Akhir Semester (UAS)** Mata Kuliah **Pemrograman Mobile 2**.
 
-- Android Studio Hedgehog (2023.1.1+)
+Aplikasi ini dirancang untuk membantu pengguna dalam mengelola kondisi keuangan sehari-hari dengan menyediakan fitur pencatatan pemasukan, pengeluaran, target tabungan, laporan keuangan, pemindaian struk menggunakan Google ML Kit OCR, serta asisten keuangan berbasis AI menggunakan Groq API.
+
+---
+
+# 🎯 Tujuan Aplikasi
+
+Aplikasi ini dibuat untuk:
+
+- Membantu pengguna mencatat pemasukan dan pengeluaran.
+- Memudahkan pengelolaan keuangan pribadi.
+- Mengurangi kesalahan input transaksi menggunakan OCR.
+- Memberikan rekomendasi finansial berbasis AI.
+- Menyediakan laporan keuangan dalam format PDF.
+
+---
+
+# ✨ Fitur Utama
+
+## 💵 Manajemen Keuangan
+
+- Tambah pemasukan
+- Tambah pengeluaran
+- Kategori transaksi
+- Deskripsi transaksi
+- Riwayat transaksi
+- Perhitungan saldo otomatis
+
+---
+
+## 🎯 Target Tabungan
+
+- Membuat target tabungan
+- Mengatur nominal target
+- Monitoring progres tabungan
+- Menampilkan persentase pencapaian
+
+---
+
+## 🧾 OCR Scan Struk
+
+- Scan menggunakan kamera
+- Import gambar dari galeri
+- OCR menggunakan Google ML Kit
+- AI membaca isi struk
+- Konversi hasil OCR menjadi data transaksi
+
+---
+
+## 🤖 AI Financial Assistant
+
+- Analisis pemasukan
+- Analisis pengeluaran
+- Analisis target tabungan
+- Memberikan saran pengelolaan keuangan
+- Menjawab pertanyaan pengguna berdasarkan data keuangan
+
+---
+
+## 📄 Export PDF
+
+- Generate laporan transaksi
+- Laporan siap dibagikan
+- Format profesional
+
+---
+
+## 📈 Statistik
+
+- Total pemasukan
+- Total pengeluaran
+- Saldo
+- Status surplus/defisit
+
+---
+
+## 🎨 Modern UI
+
+- Material Design 3
+- Jetpack Compose
+- Responsive Layout
+- Dark Mode
+- Floating AI Chat Bubble
+
+---
+
+# 🏗 Arsitektur
+
+Aplikasi menggunakan pola arsitektur **MVVM (Model - View - ViewModel)**.
+
+```
+User
+   │
+   ▼
+Jetpack Compose
+   │
+ViewModel
+   │
+Repository
+   │
+SharedPreferences
+   │
+Groq API
+Google ML Kit
+```
+
+---
+
+# 🚀 Tech Stack
+
+| Teknologi | Digunakan |
+|------------|-----------|
+| Kotlin | ✅ |
+| Jetpack Compose | ✅ |
+| Material 3 | ✅ |
+| MVVM | ✅ |
+| Retrofit | ✅ |
+| Gson | ✅ |
+| Kotlin Coroutines | ✅ |
+| Flow | ✅ |
+| CameraX | ✅ |
+| Google ML Kit OCR | ✅ |
+| Groq API | ✅ |
+| SharedPreferences | ✅ |
+| PdfDocument | ✅ |
+
+---
+
+# 📱 Preview Aplikasi
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9a5d1ed2-7347-4e5c-a65e-3a142effb6a4" width="220"/>
+  <img src="https://github.com/user-attachments/assets/9b1a066b-c40a-4b6e-a620-f67b1586114f" width="220"/>
+  <img src="https://github.com/user-attachments/assets/029c16d7-d03e-4c84-b81e-650faf73e703" width="220"/>
+</p>
+
+<p align="center">
+🏠 Dashboard &nbsp;&nbsp;&nbsp;
+🧾 Scan Struk &nbsp;&nbsp;&nbsp;
+🤖 AI Assistant
+</p>
+
+---
+
+# ⚙️ Persyaratan
+
+- Android Studio Hedgehog atau terbaru
 - JDK 11+
-- minSdk 24
-- targetSdk 34
+- Android SDK 34
+- Minimum SDK 24
+- Internet
+- Groq API Key
 
 ---
 
-### 2. Konfigurasi API Key (Groq)
+# 🔧 Instalasi
 
-Buat file:
+## Clone Repository
+
+```bash
+git clone https://github.com/username/CatatUang.git
+```
+
+Masuk ke folder project
+
+```bash
+cd CatatUang
+```
+
+---
+
+## Konfigurasi API Key
+
+Buat file
 
 ```
 secrets.properties
 ```
 
-Isi dengan:
+Isi
 
-```
-properties
-GROQ_API_KEY=gsk_kunci_anda
-```
-
----
-
-### 3. Tambahkan ke build.gradle.kts
-
-```
-kotlin
-android {
-    buildFeatures {
-        buildConfig = true
-    }
-}
-
-val secretsProperties = java.util.Properties()
-val secretsFile = rootProject.file("secrets.properties")
-
-if (secretsFile.exists()) {
-    secretsProperties.load(secretsFile.inputStream())
-}
-
-android.defaultConfig {
-    buildConfigField(
-        "String",
-        "GROQ_API_KEY",
-        "\"\${secretsProperties.getProperty("GROQ_API_KEY")}\""
-    )
-}
+```properties
+GROQ_API_KEY=YOUR_API_KEY
 ```
 
 ---
 
-### 4. Permission
+## BuildConfig
 
+Aktifkan
+
+```kotlin
+buildFeatures {
+    buildConfig = true
+}
 ```
-xml
-<uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission 
-    android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-    android:maxSdkVersion="28"/>
+
+Tambahkan
+
+```kotlin
+buildConfigField(
+"String",
+"GROQ_API_KEY",
+"\"${secretsProperties.getProperty("GROQ_API_KEY")}\""
+)
 ```
 
 ---
 
-### 5. File Provider
+## Permission
 
+```xml
+<uses-permission android:name="android.permission.CAMERA"/>
+
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+<uses-permission
+android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+android:maxSdkVersion="28"/>
 ```
-xml
+
+---
+
+## File Provider
+
+```xml
 <provider
-    android:name="androidx.core.content.FileProvider"
-    android:authorities="\${applicationId}.fileprovider"
-    android:exported="false"
-    android:grantUriPermissions="true">
-    <meta-data
-        android:name="android.support.FILE_PROVIDER_PATHS"
-        android:resource="@xml/file_paths" />
+android:name="androidx.core.content.FileProvider"
+android:authorities="${applicationId}.fileprovider"
+android:grantUriPermissions="true"
+android:exported="false">
+
+<meta-data
+android:name="android.support.FILE_PROVIDER_PATHS"
+android:resource="@xml/file_paths"/>
+
 </provider>
 ```
 
-```
-xml
+file_paths.xml
+
+```xml
 <paths>
-    <cache-path name="cache" path="/" />
+    <cache-path
+        name="cache"
+        path="/"/>
 </paths>
 ```
 
 ---
 
-### 6. Jalankan Aplikasi
+# ▶️ Menjalankan Aplikasi
 
-- Hubungkan device / emulator
-- Klik tombol Run ▶️
-
----
-
-## 🧠 Cara Kerja AI
-
-### 🧾 OCR + AI Struk
-1. Ambil foto struk  
-2. OCR membaca teks  
-3. Kirim ke Groq API  
-4. AI mengubah ke JSON (item + harga)  
-5. Ditampilkan ke user  
+1. Hubungkan perangkat Android atau Emulator.
+2. Klik **Sync Gradle**.
+3. Tekan tombol **Run**.
+4. Aplikasi siap digunakan.
 
 ---
 
-### 🤖 AI Assistant
-- Membaca data keuangan pengguna
-- Membaca target tabungan Anda
-- Memberikan insight & saran finansial
+# 🤖 Cara Kerja AI
 
----
+## OCR
 
-## 📁 Struktur Project
 ```
-com.example.catatuang
+Foto Struk
+      │
+      ▼
+Google ML Kit OCR
+      │
+      ▼
+Ekstraksi Teks
+      │
+      ▼
+Groq AI
+      │
+      ▼
+JSON
+      │
+      ▼
+Data Transaksi
+```
+
+---
+
+## AI Assistant
+
+```
+Riwayat Transaksi
+        │
+Target Tabungan
+        │
+Saldo
+        │
+        ▼
+Groq AI
+        │
+        ▼
+Analisis Keuangan
+        │
+        ▼
+Rekomendasi Finansial
+```
+
+---
+
+# 📂 Struktur Project
+
+```
+app
+│
+├── ui
+│   ├── components
+│   ├── screens
+│   └── theme
+│
+├── data
+│
+├── model
+│
+├── network
+│   └── GroqClient.kt
+│
+├── helper
+│   └── ReceiptScannerHelper.kt
+│
+├── storage
+│   └── AppPrefs.kt
+│
+├── pdf
+│   └── PdfGenerator.kt
+│
 ├── MainActivity.kt
-├── LuxuryCatatUangScreen.kt
-├── ReceiptScannerHelper.kt
-├── GroqClient.kt
-├── AppPrefs.kt
-├── PdfGenerator.kt
+│
 └── BuildConfig
 ```
----
-
-## 🔮 Roadmap
-
-- [ ] Grafik interaktif
-- [ ] Dark mode otomatis
-- [ ] Login biometrik
-- [ ] Export CSV / Excel
-- [ ] Transaksi berulang
-- [ ] Cloud sync
-- [ ] Multi-currency
 
 ---
 
-## ❗Catatan Penting
+# 📊 Hasil Implementasi
 
-- API Key Groq wajib diisi. Tanpa key, fitur AI dan ekstraksi item struk tidak akan bekerja (akan return kosong).
-- Koneksi internet diperlukan untuk memanggil Groq API.
-- OCR ML Kit berjalan secara offline (model bawaan), namun akurasi lebih baik dengan gambar yang jelas dan terang.
-- Rotasi gambar otomatis berdasarkan metadata EXIF.
-- FileProvider sudah dikonfigurasi, pastikan authority sesuai packageName.fileprovider.
-- Aplikasi tidak menggunakan database SQLite, seluruh data disimpan di SharedPreferences (cocok untuk skala kecil).
+✅ CRUD transaksi
 
-## 📜 License
-Hak Cipta © 2026 - Tugas Pemrograman Mobile
-Dibuat untuk keperluan pendidikan. Boleh dimodifikasi dan didistribusikan.
+✅ OCR Google ML Kit
 
+✅ AI Chat
 
+✅ Target Tabungan
 
+✅ Export PDF
+
+✅ Statistik Keuangan
+
+✅ Material Design 3
+
+✅ Jetpack Compose
+
+---
+
+# 🔮 Roadmap
+
+- [ ] Login Google
+- [ ] Firebase Authentication
+- [ ] Firebase Firestore
+- [ ] Cloud Sync
+- [ ] Backup & Restore
+- [ ] Export Excel
+- [ ] Export CSV
+- [ ] Grafik Interaktif
+- [ ] Multi Currency
+- [ ] Notifikasi Pengingat
+
+---
+
+# 👨‍💻 Penyusun
+
+**Muhammad Said Abimanyu**
+
+**NIM** : 312410145
+
+**Kelas** : TI.24.A1
+
+**Mata Kuliah** : Pemrograman Mobile 2
+
+---
+
+# 📜 Lisensi
+
+Proyek ini dikembangkan sebagai bagian dari **Ujian Akhir Semester (UAS) Mata Kuliah Pemrograman Mobile 2**.
+
+Hak Cipta © 2026 Muhammad Said Abimanyu.
+
+Proyek ini diperuntukkan untuk keperluan pendidikan. Penggunaan, modifikasi, dan distribusi diperbolehkan dengan tetap mencantumkan kredit kepada pengembang.
+
+---
